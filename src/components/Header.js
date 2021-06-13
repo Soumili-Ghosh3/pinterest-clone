@@ -9,6 +9,7 @@ import FaceIcon from '@material-ui/icons/Face';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 function Header(props) {
+    
     const [input, setInput] = useState("");
 
     const onSearchSubmit = (e) => {

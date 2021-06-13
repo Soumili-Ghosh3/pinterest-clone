@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Pin from './Pin'
+import './Mainboard.css'
 
 function Mainboard(props) {
 
@@ -31,7 +32,12 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
     background-color: white;
+    max-width: 1260px;
     display: flex;
-    width: 80%;
+    flex-wrap: wrap;
+    column-count: 5;
+    column-gap: 10px;
+    margin: 0 auto;
+    height: 100%;
 `
 

@@ -36,14 +36,14 @@ function App() {
     let promises = [];
     let pinData = [];
 
-    let pins = ['ocean', 'Tokyo', 'dogs', 'cats', 'bag']
+    let pins = ["ocean", "Tokyo", "dogs", "cats", "bag"]
 
     pins.forEach((pinTerm) => {
       promises.push(
         getImages(pinTerm).then((res) => {
           let results = res.data.results;
-
-          pinData = pinData.concat(results);
+          console.log(results);
+          pinData = pinData.concat(results)
 
           pinData.sort(function (a, b) {
             return 0.5 - Math.random();

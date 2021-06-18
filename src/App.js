@@ -9,9 +9,10 @@ function App() {
   const [pins, setNewPins] = useState([]); 
 
   const getImages = (term) => {
-    return unsplash.get("https://api.unsplash.com/search/photos"), 
-    ({
-      params: {query: term}
+    return unsplash.get("https://api.unsplash.com/search/photos", {
+      params: {
+        query: term
+      }
     });
   };
 
@@ -36,7 +37,7 @@ function App() {
     let promises = [];
     let pinData = [];
 
-    let pins = ["ocean", "Tokyo", "dogs", "cats", "bag"]
+    let pins = ["ocean", "Tokyo", "dogs", "cats", "bag", "New York", "night", "cars"]
 
     pins.forEach((pinTerm) => {
       promises.push(

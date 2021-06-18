@@ -33,8 +33,6 @@ const Wrapper = styled.div`
 const Container = styled.div`
     background-color: white;
     max-width: 1260px;
-    display: flex;
-    flex-wrap: wrap;
     column-count: 5;
     column-gap: 10px;
     margin: 0 auto;

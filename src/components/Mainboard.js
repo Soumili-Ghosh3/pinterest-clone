@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Pin from './Pin'
-import './Mainboard.css'
 
 function Mainboard(props) {
 
